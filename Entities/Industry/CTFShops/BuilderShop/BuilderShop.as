@@ -8,10 +8,10 @@
 void onInit(CBlob@ this)
 {
 	AddIconToken( "$dirtdrill$", "dirtdrill.png", Vec2f(16,16), 0 );
-	AddIconToken( "$gaslantern$", "gaslantern.png", Vec2f(16,16), 0 );
+	AddIconToken( "$_buildershop_gaslantern$", "gaslantern.png", Vec2f(8,8), 0 );
 	AddIconToken( "$handsaw$", "handsaw.png", Vec2f(16,16), 0 );
 	AddIconToken( "$chainsaw$", "ChainsawIcon.png", Vec2f(16,16), 0 );
-	AddIconToken( "$drill$", "drill.png", Vec2f(16,16), 0 );
+	//AddIconToken( "$drill$", "drill.png", Vec2f(16,16), 0 );
 	AddIconToken( "$statue1$", "statue1.png", Vec2f(16,16), 0 );
 	AddIconToken( "$statue2$", "statue2.png", Vec2f(16,16), 0 );
 	AddIconToken( "$statue3$", "statue3.png", Vec2f(16,16), 0 );
@@ -33,7 +33,7 @@ void onInit(CBlob@ this)
 
 
 	{
-		ShopItem@ s = addShopItem(this, "Gas Lantern", "$gaslantern$", "gaslantern", "a light", false);
+		ShopItem@ s = addShopItem(this, "Gas Lantern", "$_buildershop_gaslantern$", "gaslantern", "a light", false);
 		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 50);
 	}
 	{
