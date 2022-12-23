@@ -20,7 +20,7 @@ void GetButtonsFor( CBlob@ this, CBlob@ caller )
 {
 	CBitStream params;
 	params.write_u16(caller.getNetworkID());
-	caller.CreateGenericButton( 29, Vec2f(0.0,0.0), this, this.getCommandID("activate"), "Turn on/off", params );
+	caller.CreateGenericButton("$gaslantern$", Vec2f(0.0,0.0), this, this.getCommandID("activate"), "Turn on/off", params );
 }
 void onTick( CBlob@ this )
 {
